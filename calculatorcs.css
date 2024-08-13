@@ -68,3 +68,31 @@ body{
     border-radius: 10px;
   
 }
+.quote-genarator {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#quoteButton {
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 40px;
+   
+    cursor: pointer;
+    margin : 5px;
+}
+#quoteButton:hover {
+    background-color: #f4f4f4;
+    color: #333333;
+   
+}
+#quoteDisplay {
+    margin-top: 20px;
+    font-size: 1em;
+    color: white;
+}

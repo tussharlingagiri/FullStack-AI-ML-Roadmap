@@ -26,3 +26,5 @@ function calculate(operation){
     }
     document.getElementById('result').textContent = result;
 }
+
+
