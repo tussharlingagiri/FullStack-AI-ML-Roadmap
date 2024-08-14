@@ -22,7 +22,7 @@ listContainer.addEventListener('click', function (e) {
     if (e.target.tagName == 'LI') {
         clickTimeout = setTimeout(() => {
             if (!isDoubleClick) {
-                e.target.classList.toggle('checked');
+                e.target.classList.toggle('highlight');
             }
             isDoubleClick = false;
 
