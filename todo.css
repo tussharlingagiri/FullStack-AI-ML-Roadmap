@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 110%;
+    background: linear-gradient(#1e2b58,#253569,#353283,#48459a,#614cbf);
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 100px auto 30px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+.todo-app h1 {
+    display: flex;
+   margin-bottom: auto;
+    align-items: center;
+    color: #002765;
+}
+
+
+
+.add-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #002765;
+    transition: background 0.3s;
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.add-todo button {
+    background: #002765;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.add-todo button:hover {
+    background: #003a8c;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 8px 12px 50px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    transition: background 0.3s;
+    
+}
+ul li::before{
+   
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 16px;
+    left: 10px;
+}
+
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    background-image: url(checked.jpg);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+ul li span:hover{
+    color: #ff0000;
+}
+
