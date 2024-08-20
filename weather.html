@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel = 'stylesheet' href = 'weathercs.css'>
+    
+</html>
+<body>
+    <div class = 'container'>
+        <h1>Weather App</h1>
+        <input type = 'text' id = 'search' placeholder = 'Enter city name'>
+        <button id = 'search-button' onclick = 'getWeather()'>Get Weather</button>
+        <div id ='weather' style="display:none;">
+            <div class ='weather-info ' id = 'cityName'></div>
+            <div class ='weather-info ' id = 'temperature'></div>
+            <div class ='weather-info ' id = 'description'></div>
+        </div>
+    </div>
+    <script src = 'weatherscript.js'></script>
+</body>
+</html>

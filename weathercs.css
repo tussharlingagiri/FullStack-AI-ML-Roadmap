@@ -1,0 +1,38 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: grey;
+    display:flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 100px auto 30px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    
+}
+
+h1{
+    display: flex;
+    margin-bottom: auto;
+    align-items: center;
+    color: #002765;
+
+}
+#weather {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color:gray;
+    border: 8px;
+    display: inline-block;
+}
+
+.weather-info{
+    margin-bottom: 10px;
+}

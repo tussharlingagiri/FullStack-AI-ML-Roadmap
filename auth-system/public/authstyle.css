@@ -1,0 +1,62 @@
+/* public/authstyle.css */
+body {
+    background-color: #0f0f0f;
+    color: #00ffcc;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ffcc;
+    color: #0f0f0f;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff00ff;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff00ff;
+}
