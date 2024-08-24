@@ -14,7 +14,7 @@ model = Sequential([
     Flatten(input_shape=(28,28)), # converts the 2D 28x28 image to a 1D array of 784 pixels
     Dense(128, activation='relu'), # fully connected layer with 128 neurons and relu activation function introduces non linearity 
     Dense(10, activation='softmax')  #. The softmax activation function converts the output of each neuron into a probability distribution, with the sum of all probabilities equal to 1.
-
+])
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']) # minimize the loss function during the training of neural networks.  It measures the difference between the predicted probability distribution and the true distribution.The accuracy metric is used to evaluate the model's performance on the training and testing data.
 
 model.fit(x_train, y_train, epochs=5, validation_data=(x_test,y_test)) # epochs is the number of times the model will be trained on the entire dataset. The validation_data parameter is used to evaluate the model on the test data after each epoch.
