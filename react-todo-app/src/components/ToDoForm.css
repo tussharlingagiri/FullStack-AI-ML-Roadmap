@@ -1,0 +1,35 @@
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.todo-input {
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    width: 400px;
+}
+
+.add-button {
+    background: linear-gradient(45deg, #00b6b6, #00e2e2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.add-button:hover {
+    background: linear-gradient(45deg, #00e2e2, #00b6b6);
+    transform: scale(1.1);
+}
+
+.add-button:active {
+    transform: scale(0.9);
+}

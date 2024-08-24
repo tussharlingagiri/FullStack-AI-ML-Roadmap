@@ -1,0 +1,99 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.edit-input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    width: 400px;
+}
+
+.toggle-checkbox {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.todo-task {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background: linear-gradient(45deg, #b60000, #e20000);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.delete-button:hover {
+    background: linear-gradient(45deg, #e20000, #b60000);
+    transform: scale(1.1);
+}
+
+.delete-button:active {
+    transform: scale(0.9);
+}
+
+/* Styles for the checkbox and its label */
+.todo-checkbox {
+    display: none;
+}
+
+.todo-checkbox + .todo-label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    color: #e0e0e0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.todo-checkbox + .todo-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.todo-checkbox:checked + .todo-label:before {
+    background: linear-gradient(45deg, #00b6b6, #00e2e2);
+    border-color: #00b6b6;
+}
+
+.todo-checkbox:checked + .todo-label:after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.todo-task {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #e0e0e0;
+}
